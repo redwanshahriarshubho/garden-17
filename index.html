@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +11,10 @@
     
     <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Custom Styles -->
     <style>
@@ -22,6 +23,16 @@
         }
         .hero-bg {
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Animation for fade-in effect */
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -30,7 +41,7 @@
     <header class="bg-black text-white p-4 shadow-lg sticky top-0 z-50">
         <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center mb-4 md:mb-0">
-                <i class="fas fa-leaf text-2xl mr-2"></i>
+                <i class="fas fa-leaf text-2xl mr-2 text-gray-300"></i>
                 <h1 class="text-2xl font-bold">Garden 17</h1>
             </div>
             <ul class="flex space-x-6">
@@ -87,7 +98,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Plant Card 1 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/mango.jpg" alt="Mango" class="w-full h-48 object-cover">
+                <img src="img/Mango tree01.jpg" alt="Mango" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Mango</h3>
                     <p class="text-gray-400 mb-4">Ubiquitous fruit tree in gardens and orchards; provides sweet fruit and dense shade; culturally significant in Bengali literature and cuisine.</p>
@@ -100,7 +111,7 @@
             
             <!-- Plant Card 2 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/jackfruit.jpg" alt="Jackfruit" class="w-full h-48 object-cover">
+                <img src="img/Jackfruit tree01.jpg" alt="Jackfruit" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Jackfruit</h3>
                     <p class="text-gray-400 mb-4">National fruit tree; large, versatile fruit used in curries and desserts; common in homesteads for food and timber.</p>
@@ -113,7 +124,7 @@
             
             <!-- Plant Card 3 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/guava.jpg" alt="Guava" class="w-full h-48 object-cover">
+                <img src="img/Guava tree01.jpg" alt="Guava" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Guava</h3>
                     <p class="text-gray-400 mb-4">Hardy, fast-growing tree with vitamin-rich fruit; widely planted in home gardens for easy harvesting and medicinal uses.</p>
@@ -126,7 +137,7 @@
 
             <!-- Plant Card 4 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/betel-nut.jpg" alt="Betel Nut" class="w-full h-48 object-cover">
+                <img src="img/Betel Nut tree.jpg" alt="Betel Nut" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Betel Nut</h3>
                     <p class="text-gray-400 mb-4">Tall palm-like tree essential for paan (betel leaf chew); grown in rural and urban gardens for cultural and economic value.</p>
@@ -139,7 +150,7 @@
 
             <!-- Plant Card 5 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/coconut.jpg" alt="Coconut" class="w-full h-48 object-cover">
+                <img src="img/Coconut tree01.jpg" alt="Coconut" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Coconut</h3>
                     <p class="text-gray-400 mb-4">Iconic coastal garden tree; yields nuts, oil, and coir; provides year-round utility in food, drink, and crafts.</p>
@@ -152,7 +163,7 @@
 
             <!-- Plant Card 6 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/date-palm.jpg" alt="Date Palm" class="w-full h-48 object-cover">
+                <img src="img/Date Palm tree.jpg" alt="Date Palm" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Date Palm</h3>
                     <p class="text-gray-400 mb-4">Slender tree for sweet dates; common in drier northern gardens; used for fruit, syrup, and traditional roofing.</p>
@@ -165,7 +176,7 @@
 
             <!-- Plant Card 7 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/jujube.jpg" alt="Jujube" class="w-full h-48 object-cover">
+                <img src="img/Jujube tree01.jpg" alt="Jujube" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Jujube</h3>
                     <p class="text-gray-400 mb-4">Drought-tolerant shrubby tree with nutritious berries; popular in village gardens for snacking and hedging.</p>
@@ -178,7 +189,7 @@
 
             <!-- Plant Card 8 -->
             <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
-                <img src="images/black-plum.jpg" alt="Black Plum" class="w-full h-48 object-cover">
+                <img src="img/Black Plum tree01.jpg" alt="Black Plum" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Black Plum</h3>
                     <p class="text-gray-400 mb-4">Evergreen tree with purple fruit and medicinal bark; planted for shade in public parks and home compounds.</p>
@@ -209,14 +220,14 @@
                 <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
                     <i class="fas fa-leaf text-5xl text-gray-400 mb-4"></i>
                     <h3 class="text-2xl font-bold mb-4">Plant Maintenance</h3>
-                    <p>Regular plant care, fertilizer application and disease control</p>
+                    <p>Regular plant care, fertilizer application, and disease control</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16">
+    <section id="contact" class="py-16 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-100">Contact Us</h2>
             <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl shadow-lg p-8">
@@ -224,7 +235,6 @@
                     <div>
                         <h3 class="text-2xl font-bold mb-4 text-gray-200">Garden 17</h3>
                         <p class="mb-6">Premier Gardening Center in Bashundhara Residential Area</p>
-                        
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <i class="fas fa-map-marker-alt text-gray-400 mt-1 mr-3 w-6"></i>
@@ -233,7 +243,6 @@
                                     <p>Bashundhara, Dhaka</p>
                                 </div>
                             </div>
-                            
                             <div class="flex items-center">
                                 <i class="fas fa-phone text-gray-400 mr-3 w-6"></i>
                                 <div>
@@ -241,7 +250,6 @@
                                     <p>+880 1401-445752</p>
                                 </div>
                             </div>
-                            
                             <div class="flex items-center">
                                 <i class="fas fa-envelope text-gray-400 mr-3 w-6"></i>
                                 <div>
@@ -249,7 +257,6 @@
                                     <p>info@garden17bd.com</p>
                                 </div>
                             </div>
-                            
                             <div class="flex items-center">
                                 <i class="fas fa-clock text-gray-400 mr-3 w-6"></i>
                                 <div>
@@ -259,25 +266,22 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div>
                         <h3 class="text-2xl font-bold mb-4 text-gray-200">Quick Contact</h3>
                         <form id="contact-form" class="space-y-4">
                             <div>
-                                <label class="block mb-1">Your Name</label>
+                                <label class="block mb-1 text-gray-200">Your Name</label>
                                 <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 bg-gray-900 text-white" required>
                             </div>
                             <div>
-                                <label class="block mb-1">Phone Number</label>
+                                <label class="block mb-1 text-gray-200">Phone Number</label>
                                 <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 bg-gray-900 text-white" required>
                             </div>
                             <div>
-                                <label class="block mb-1">Message</label>
+                                <label class="block mb-1 text-gray-200">Message</label>
                                 <textarea rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 bg-gray-900 text-white" required></textarea>
                             </div>
-                            <button type="submit" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg w-full transition">
-                                Send Message
-                            </button>
+                            <button type="submit" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg w-full transition">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -288,7 +292,7 @@
     <!-- Map Section -->
     <section class="py-8 bg-gray-800">
         <div class="container mx-auto px-4">
-            <h3 class="text-2xl font-bold text-center mb-6">Our Location</h3>
+            <h3 class="text-2xl font-bold text-center mb-6 text-gray-100">Our Location</h3>
             <div class="bg-gray-700 h-64 rounded-lg flex items-center justify-center">
                 <div class="text-center">
                     <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-2"></i>
@@ -311,17 +315,17 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#plants" class="hover:text-gray-300">Plants</a></li>
-                        <li><a href="#services" class="hover:text-gray-300">Services</a></li>
-                        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                        <li><a href="#plants" class="hover:text-gray-300 transition">Plants</a></li>
+                        <li><a href="#services" class="hover:text-gray-300 transition">Services</a></li>
+                        <li><a href="#contact" class="hover:text-gray-300 transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-bold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-2xl hover:text-gray-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-2xl hover:text-gray-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-2xl hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -347,36 +351,32 @@
         // Contact Form Handler
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form values
             const name = e.target.querySelector('input[type="text"]').value;
             const phone = e.target.querySelector('input[type="tel"]').value;
             const message = e.target.querySelector('textarea').value;
-            
-            // Simple validation
-            if(name && phone && message) {
+            if (name && phone && message) {
                 alert(`Thank you ${name}! We received your message. We will contact you soon at (${phone}).`);
                 e.target.reset();
+            } else {
+                alert('Please fill in all fields.');
             }
         });
 
-        // Add animation on scroll
+        // Scroll animation observer
         const observerOptions = {
             threshold: 0.1
         };
-
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if(entry.isIntersecting) {
+                if (entry.isIntersecting) {
                     entry.target.classList.add('animate-fade-in');
                 }
             });
         }, observerOptions);
-
-        // Observe all sections
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
         });
     </script>
 </body>
 </html>
+```
