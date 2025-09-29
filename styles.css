@@ -1,0 +1,23 @@
+/* Custom Fonts */
+.font-['Merriweather'] {
+  font-family: 'Merriweather', serif;
+}
+
+.font-['Montserrat'] {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}

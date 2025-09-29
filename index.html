@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden 17 - Urban Oasis</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Fonts (Optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-green-50 font-sans">
+    <!-- Header -->
+    <header class="bg-green-800 text-white p-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold font-['Montserrat']">Garden 17</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-green-200">Home</a></li>
+                <li><a href="#plants" class="hover:text-green-200">Plants</a></li>
+                <li><a href="#tips" class="hover:text-green-200">Tips</a></li>
+                <li><a href="#contact" class="hover:text-green-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1950');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative text-center text-white px-4">
+            <h2 class="text-5xl font-bold mb-4 font-['Merriweather']">Your Urban Green Sanctuary</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Transform your space with our curated collection of plants and gardening solutions</p>
+            <button id="cta-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                Explore Our Plants
+            </button>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section id="plants" class="py-16 container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-green-900">Featured Plants</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Plant Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1485955900006-10f4d7d665ad?auto=format&fit=crop&w=600" alt="Monstera" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Monstera Deliciosa</h3>
+                    <p class="text-gray-600 mb-4">Tropical beauty with split leaves. Perfect for bright indoor spaces.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-green-700 font-bold">$45</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plant Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600" alt="Snake Plant" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Snake Plant</h3>
+                    <p class="text-gray-600 mb-4">Low-maintenance air purifier. Thrives in low light conditions.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-green-700 font-bold">$30</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plant Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=600" alt="Fiddle Leaf Fig" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Fiddle Leaf Fig</h3>
+                    <p class="text-gray-600 mb-4">Statement plant with large violin-shaped leaves. Instagram favorite!</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-green-700 font-bold">$65</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-16 bg-green-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-green-900">Gardening Tips</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-green-800">Watering Guide</h3>
+                    <p class="mb-4">Most houseplants prefer to dry out slightly between waterings. Stick your finger 1-2 inches into the soil - if it's dry, it's time to water!</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8 text-green-800">Light Requirements</h3>
+                    <p class="mb-4">Match plants to your light conditions: low light (north-facing windows), medium light (east/west), or bright light (south-facing).</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8 text-green-800">Seasonal Care</h3>
+                    <p>Reduce watering in winter when growth slows. Increase humidity during dry months by grouping plants together or using a humidifier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-green-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Garden 17</h3>
+                    <p>Creating green spaces in urban environments since 2017</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <p>📧 hello@garden17.com</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📍 17 Green St, Garden City</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <form id="newsletter-form" class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-800">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-green-700 text-center">
+                <p>&copy; 2023 Garden 17. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
