@@ -3,139 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garden 17 - Urban Oasis</title>
+    <title>গার্ডেন ১৭ - Dhaka's Premier Plant Nursery</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Custom Fonts (Optional) -->
+    <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        .font-bangla {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        .font-english {
+            font-family: 'Merriweather', serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1591325282626-1c5a3c2ac5c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+        }
+    </style>
 </head>
-<body class="bg-green-50 font-sans">
+<body class="bg-green-50 font-bangla">
     <!-- Header -->
-    <header class="bg-green-800 text-white p-4 shadow-lg">
-        <nav class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold font-['Montserrat']">Garden 17</h1>
+    <header class="bg-green-800 text-white p-4 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-leaf text-2xl mr-2"></i>
+                <h1 class="text-2xl font-bold">গার্ডেন ১৭</h1>
+            </div>
             <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:text-green-200">Home</a></li>
-                <li><a href="#plants" class="hover:text-green-200">Plants</a></li>
-                <li><a href="#tips" class="hover:text-green-200">Tips</a></li>
-                <li><a href="#contact" class="hover:text-green-200">Contact</a></li>
+                <li><a href="#home" class="hover:text-green-200 transition"><i class="fas fa-home mr-1"></i> হোম</a></li>
+                <li><a href="#plants" class="hover:text-green-200 transition"><i class="fas fa-seedling mr-1"></i> গাছপালা</a></li>
+                <li><a href="#services" class="hover:text-green-200 transition"><i class="fas fa-concierge-bell mr-1"></i> সেবা</a></li>
+                <li><a href="#contact" class="hover:text-green-200 transition"><i class="fas fa-phone mr-1"></i> যোগাযোগ</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center">
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1950');">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+    <section id="home" class="hero-bg h-screen flex items-center justify-center">
+        <div class="text-center text-white px-4 max-w-4xl">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 font-english">Garden 17</h2>
+            <p class="text-xl md:text-2xl mb-6">ঢাকার প্রিমিয়ার গার্ডেনিং সেন্টার</p>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">বাসুন্ধরা, ঢাকায় অবস্থিত আপনার সবুজ বন্ধু - রেডওয়ান শাহরিয়ার শুভ'র গার্ডেনিং সেবা</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    <i class="fas fa-shopping-cart mr-2"></i> গাছ কিনুন
+                </button>
+                <button class="bg-transparent border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> কল করুন
+                </button>
+            </div>
         </div>
-        <div class="relative text-center text-white px-4">
-            <h2 class="text-5xl font-bold mb-4 font-['Merriweather']">Your Urban Green Sanctuary</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Transform your space with our curated collection of plants and gardening solutions</p>
-            <button id="cta-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
-                Explore Our Plants
-            </button>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600" alt="Redwan Shahriar Shubho" class="rounded-full w-64 h-64 object-cover mx-auto border-4 border-green-600">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-4 text-green-900">পরিচিতি</h2>
+                    <h3 class="text-2xl mb-4">রেডওয়ান শাহরিয়ার শুভ</h3>
+                    <p class="text-lg mb-4">গার্ডেন ১৭-এর প্রতিষ্ঠাতা ও পরিচালক</p>
+                    <p class="mb-4">বাংলাদেশের গার্ডেনিং শিল্পে ১০ বছরের অভিজ্ঞতাসহ রেডওয়ান শাহরিয়ার শুভ ঢাকার বাসুন্ধরা এলাকায় গার্ডেন ১৭ প্রতিষ্ঠা করেন। তিনি বাংলাদেশের জলবায়ু উপযোগী গাছপালা নিয়ে গবেষণা করেন এবং গ্রাহকদের সর্বোত্তম পরামর্শ দিয়ে থাকেন।</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">গার্ডেনিং বিশেষজ্ঞ</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">ল্যান্ডস্কেপিং</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">প্ল্যান্ট কেয়ার</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Plants Section -->
     <section id="plants" class="py-16 container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12 text-green-900">Featured Plants</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 text-green-900">আমাদের গাছপালা</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Plant Card 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
                 <img src="https://images.unsplash.com/photo-1485955900006-10f4d7d665ad?auto=format&fit=crop&w=600" alt="Monstera" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Monstera Deliciosa</h3>
-                    <p class="text-gray-600 mb-4">Tropical beauty with split leaves. Perfect for bright indoor spaces.</p>
+                    <h3 class="text-xl font-bold mb-2">মনস্টেরা</h3>
+                    <p class="text-gray-600 mb-4">বাংলাদেশের আবহাওয়ায় ভালো বাড়ে, ঘরের ভেতর রাখার জন্য আদর্শ</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-green-700 font-bold">$45</span>
-                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add to Cart</button>
+                        <span class="text-green-700 font-bold">৳ ৪৫০</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">কিনুন</button>
                     </div>
                 </div>
             </div>
             
             <!-- Plant Card 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
                 <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600" alt="Snake Plant" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Snake Plant</h3>
-                    <p class="text-gray-600 mb-4">Low-maintenance air purifier. Thrives in low light conditions.</p>
+                    <h3 class="text-xl font-bold mb-2">স্নেক প্ল্যান্ট</h3>
+                    <p class="text-gray-600 mb-4">কম যত্নে বাড়ে, বাতাস পরিষ্কার করে, ব্যালকনিতে রাখা যায়</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-green-700 font-bold">$30</span>
-                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add to Cart</button>
+                        <span class="text-green-700 font-bold">৳ ৩০০</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">কিনুন</button>
                     </div>
                 </div>
             </div>
             
             <!-- Plant Card 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
                 <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=600" alt="Fiddle Leaf Fig" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Fiddle Leaf Fig</h3>
-                    <p class="text-gray-600 mb-4">Statement plant with large violin-shaped leaves. Instagram favorite!</p>
+                    <h3 class="text-xl font-bold mb-2">ফিডল লিফ ফিগ</h3>
+                    <p class="text-gray-600 mb-4">বাংলাদেশে খুব জনপ্রিয়, ঘরের সৌন্দর্য বাড়ায়</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-green-700 font-bold">$65</span>
-                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add to Cart</button>
+                        <span class="text-green-700 font-bold">৳ ৬৫০</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">কিনুন</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tips Section -->
-    <section id="tips" class="py-16 bg-green-100">
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-green-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-green-900">Gardening Tips</h2>
-            <div class="max-w-3xl mx-auto">
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-green-800">Watering Guide</h3>
-                    <p class="mb-4">Most houseplants prefer to dry out slightly between waterings. Stick your finger 1-2 inches into the soil - if it's dry, it's time to water!</p>
+            <h2 class="text-4xl font-bold text-center mb-12 text-green-900">আমাদের সেবাসমূহ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-home text-5xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">হোম গার্ডেনিং</h3>
+                    <p>আপনার বাসার ব্যালকনি বা ছাদে সুন্দর গার্ডেন তৈরি করা</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-building text-5xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">অফিস ল্যান্ডস্কেপিং</h3>
+                    <p>অফিস বা কোম্পানির জন্য পেশাদার ল্যান্ডস্কেপিং সেবা</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-leaf text-5xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">প্ল্যান্ট মেইনটেনেন্স</h3>
+                    <p>নিয়মিত গাছের যত্ন, সার প্রয়োগ এবং রোগ নিয়ন্ত্রণ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-green-900">যোগাযোগ করুন</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">গার্ডেন ১৭</h3>
+                        <p class="mb-6">বাসুন্ধরা আবাসিক এলাকার প্রিমিয়ার গার্ডেনিং সেন্টার</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-green-600 mt-1 mr-3 w-6"></i>
+                                <div>
+                                    <h4 class="font-bold">ঠিকানা</h4>
+                                    <p>ব্লক-সি, রোড-১১, বাসুন্ধরা আবাসিক এলাকা, ঢাকা-১২২৯</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-green-600 mr-3 w-6"></i>
+                                <div>
+                                    <h4 class="font-bold">ফোন</h4>
+                                    <p>+৮৮০ ১৭১২-৩৪৫৬৭৮</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-green-600 mr-3 w-6"></i>
+                                <div>
+                                    <h4 class="font-bold">ইমেইল</h4>
+                                    <p>info@garden17bd.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-green-600 mr-3 w-6"></i>
+                                <div>
+                                    <h4 class="font-bold">খোলার সময়</h4>
+                                    <p>শনি-বৃহস্পতি: সকাল ৯টা - সন্ধ্যা ৭টা</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <h3 class="text-2xl font-bold mb-4 mt-8 text-green-800">Light Requirements</h3>
-                    <p class="mb-4">Match plants to your light conditions: low light (north-facing windows), medium light (east/west), or bright light (south-facing).</p>
-                    
-                    <h3 class="text-2xl font-bold mb-4 mt-8 text-green-800">Seasonal Care</h3>
-                    <p>Reduce watering in winter when growth slows. Increase humidity during dry months by grouping plants together or using a humidifier.</p>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">দ্রুত যোগাযোগ</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label class="block mb-1">আপনার নাম</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                            <div>
+                                <label class="block mb-1">ফোন নম্বর</label>
+                                <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                            <div>
+                                <label class="block mb-1">বার্তা</label>
+                                <textarea rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg w-full transition">
+                                বার্তা পাঠান
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-center mb-6">আমাদের অবস্থান</h3>
+            <div class="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fas fa-map-marked-alt text-4xl text-green-600 mb-2"></i>
+                    <p>গুগল ম্যাপে দেখুন</p>
+                    <p class="text-sm">বাসুন্ধরা, ঢাকা</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-green-900 text-white py-12">
+    <footer class="bg-green-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Garden 17</h3>
-                    <p>Creating green spaces in urban environments since 2017</p>
+                    <h3 class="text-xl font-bold mb-4">গার্ডেন ১৭</h3>
+                    <p>বাংলাদেশের প্রথম প্রিমিয়াম গার্ডেনিং সেন্টার</p>
+                    <p class="mt-2">প্রতিষ্ঠিত: ২০১৭</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
-                    <p>📧 hello@garden17.com</p>
-                    <p>📞 (555) 123-4567</p>
-                    <p>📍 17 Green St, Garden City</p>
+                    <h4 class="text-lg font-bold mb-4">দ্রুত লিংক</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#plants" class="hover:text-green-200">গাছপালা</a></li>
+                        <li><a href="#services" class="hover:text-green-200">সেবাসমূহ</a></li>
+                        <li><a href="#contact" class="hover:text-green-200">যোগাযোগ</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
-                    <form id="newsletter-form" class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-800">
-                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r">Subscribe</button>
-                    </form>
+                    <h4 class="text-lg font-bold mb-4">আমাদের অনুসরণ করুন</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-green-200"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-200"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-green-700 text-center">
-                <p>&copy; 2023 Garden 17. All rights reserved.</p>
+                <p>&copy; ২০২৩ গার্ডেন ১৭. সর্বস্বত্ব সংরক্ষিত।</p>
+                <p class="mt-2">ডিজাইন ও ডেভেলপমেন্ট: রেডওয়ান শাহরিয়ার শুভ</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Contact Form Handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = e.target.querySelector('input[type="text"]').value;
+            const phone = e.target.querySelector('input[type="tel"]').value;
+            const message = e.target.querySelector('textarea').value;
+            
+            // Simple validation
+            if(name && phone && message) {
+                alert(`ধন্যবাদ ${name}! আপনার বার্তা পেয়েছি। শীঘ্রই আপনার ফোন নম্বরে (${phone}) যোগাযোগ করব।`);
+                e.target.reset();
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
